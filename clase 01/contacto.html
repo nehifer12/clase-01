@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container{
+            background: #fff;
+            padding: 90px;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #6a11cb;
+        }
+
+        .form-group {
+            margin-bottom: 15px; 
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input{
+            width: 100%;
+            padding:20px;
+            border: 3px solid #030303;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus {
+            border-color: #6a11cb;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #17f003dc;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background: #2575fc;
+        }
+
+        .form-group small {
+            display: blacok;
+            margin-top: 10px;
+            font-size: 0.875rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container"> 
+        <h1>Formulario de Contacto</h1>
+        <form action="">
+            <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <input type="text" placeholder="Ingrese su nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="Correo">Correo Electronico</label>
+             <input type="Email" id="Correo" name="Correo" placeholder="Ingrese su Correo Electronico">
+         </div>
+
+        <div class="form-group">
+            <label for="Mensaje">Mensaje</label>
+            <input type="text" placeholder="Escriba su Mensaje">
+        </div>
+
+        <div class="form-group">
+             <button type="submit">ENVIAR</button>
+        </div>
+
+            <small>Su informacion es Confidencial</small>
+        </form>
+    </div>
+</body>
+</html>
